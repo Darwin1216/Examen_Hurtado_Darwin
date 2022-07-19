@@ -28,10 +28,6 @@ public class Empleado extends Persona{
     public double getSueldoBruto() {
         return sueldoBruto;
     }
-
-           
-    
-    
     
     @Override
     public String toString() {

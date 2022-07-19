@@ -14,6 +14,7 @@ public class Aplicacion {
         Scanner leer = new Scanner(System.in);
         Persona p1 = new Cliente();
         
+        
         p1.setCi(JOptionPane.showInputDialog("Ingresa numero de cedula"));
         p1.setNombre(JOptionPane.showInputDialog("Ingresa Nombre 1"));
         p1.setNombre2(JOptionPane.showInputDialog("Ingresa nombre 2 "));
@@ -27,8 +28,14 @@ public class Aplicacion {
         JOptionPane.showMessageDialog(null, p1.toString());
         }       
         
+        
+        
+        
+        
+        
     String nombre=JOptionPane.showInputDialog("Nombre del trabajador");
-int dt=Integer.parseInt(JOptionPane.showInputDialog("dias trabajados"));
+    String profesion=JOptionPane.showInputDialog("Profesion");
+int dt=Integer.parseInt(JOptionPane.showInputDialog("Dias trabajados"));
 double pd=Double.parseDouble(JOptionPane.showInputDialog("Pago por dia"));
      
      double sb=0,aux;
@@ -42,7 +49,10 @@ double pd=Double.parseDouble(JOptionPane.showInputDialog("Pago por dia"));
         }else{
             sb=dt*pd;
         }
-     JOptionPane.showMessageDialog(null,"Trabajador: "+nombre+", Sueldo bruto: "+sb+",dias trabajdos: "+dt);
+     JOptionPane.showMessageDialog(null,"Trabajador: "+nombre+"\n"
+             + "Profesion: "+profesion+"\n"
+                     +"Dias trabajdos: "+dt+"\n"
+             + "Sueldo bruto: "+sb+"\n");
         
     }
 
