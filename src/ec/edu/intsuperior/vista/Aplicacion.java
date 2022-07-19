@@ -55,5 +55,11 @@ double pd=Double.parseDouble(JOptionPane.showInputDialog("Pago por dia"));
              + "Sueldo bruto: "+sb+"\n");
         
     }
+	private int nombre;
+	private int edad;
 
+	public void mostrar() {
+		// TODO - implement Persona.mostrar
+		throw new UnsupportedOperationException();
+        }	
 }
